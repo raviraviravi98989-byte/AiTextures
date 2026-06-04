@@ -1,30 +1,26 @@
 {
   "schemaVersion": 1,
   "id": "aitextures",
-  "version": "${version}",
-  "name": "AI Textures",
-  "description": "Generate Minecraft textures using AI without requiring an API key",
-  "authors": [
-    "raviraviravi98989-byte"
-  ],
+  "version": "1.0.0",
+  "name": "AiTextures",
+  "description": "Adds AI-generated textures and related utilities.",
+  "authors": ["raviraviravi98989-byte"],
   "contact": {
     "homepage": "https://github.com/raviraviravi98989-byte/AiTextures",
     "sources": "https://github.com/raviraviravi98989-byte/AiTextures"
   },
   "license": "MIT",
-  "icon": "assets/aitextures/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.aitextures.AiTexturesClient"
+      "com.raviraviravi.aitextures.AiTextures"
     ]
   },
   "mixins": [
     "aitextures.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.15.0",
-    "minecraft": "~1.21.1",
-    "java": ">=21"
+    "fabricloader": ">=0.14.0",
+    "minecraft": "1.20.x"
   }
 }
